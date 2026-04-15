@@ -62,7 +62,7 @@ class Program
 
         do
         {
-            Console.WriteLine("\n             MENU        ");
+            Console.WriteLine("\nMENU");
             for (int i = 0; i < products.Length; i++)
             {
                 products[i].DisplayProduct();
@@ -148,7 +148,7 @@ class Program
 
         } while (choice == "Y");
 
-        Console.WriteLine("\n            RECEIPT         ");
+        Console.WriteLine("\nRECEIPT");
         double grandTotal = 0;
 
         for (int i = 0; i < cartCount; i++)
@@ -180,7 +180,7 @@ class Program
         double finalTotal = grandTotal - discount;
         Console.WriteLine($"Final Total: ₱{finalTotal}");
 
-        Console.WriteLine("\n           UPDATED STOCK        ");
+        Console.WriteLine("\nUPDATED STOCK");
         for (int i = 0; i < products.Length; i++)
         {
             products[i].DisplayProduct();
