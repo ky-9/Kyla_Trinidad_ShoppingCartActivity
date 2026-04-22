@@ -4,13 +4,13 @@ This project is a simple ShoppingCartSystem, which will serve as a quiz requirem
 # AI-Usage
 
 Where I used AI
--Setting up GitHub
--Debugging errors in my code
+- Setting up GitHub
+- Debugging errors in my code
 
 Why I used AI
--To learn how to properly set up and use GitHub
--To find and fix errors faster
--To understand my code better
+- To learn how to properly set up and use GitHub
+- To find and fix errors faster
+- To understand my code better
 
 Prompts I asked
 "How do I create a GitHub repository and push my code step by step"
@@ -18,7 +18,7 @@ Prompts I asked
 "Why is my code not working"
 
 What I improved after using AI
--Checked and tested each solution before using it
--Changed some parts of the code to match my own understanding
--Fixed errors by myself after reading the explanations
--Made my code cleaner and more organized
+- Checked and tested each solution before using it
+- Changed some parts of the code to match my own understanding
+- Fixed errors by myself after reading the explanations
+- Made my code cleaner and more organized
