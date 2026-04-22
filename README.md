@@ -13,9 +13,9 @@ Why I used AI
 - To understand my code better
 
 Prompts I asked
-"How do I create a GitHub repository and push my code step by step"
-"Find the error in my code"
-"Why is my code not working"
+- "How do I create a GitHub repository and push my code step by step"
+- "Find the error in my code"
+- "Why is my code not working"
 
 What I improved after using AI
 - Checked and tested each solution before using it
