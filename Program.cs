@@ -66,7 +66,7 @@ class Program
         
         while (true)
         {
-            Console.WriteLine("\n=== MAIN MENU ===");
+            Console.WriteLine("\n     MAIN MENU");
             Console.WriteLine("1. View Products");
             Console.WriteLine("2. Search Product");
             Console.WriteLine("3. Filter by Category");
@@ -154,7 +154,7 @@ class Program
                 double change = payment - final;
 
                 
-                Console.WriteLine("\n=== RECEIPT ===");
+                Console.WriteLine("\n     RECEIPT");
                 Console.WriteLine($"Receipt No: {receiptNo:D4}");
                 Console.WriteLine($"Date: {DateTime.Now}");
 
@@ -260,7 +260,7 @@ class Program
     {
         while (true)
         {
-            Console.WriteLine("\n=== CART ===");
+            Console.WriteLine("\n    CART");
 
             if (cartCount == 0)
             {
