@@ -6,19 +6,27 @@ This project is a simple ShoppingCartSystem, which will serve as a quiz requirem
 Where I used AI
 - Setting up GitHub
 - Debugging errors in my code
+- Enhancing the original program to include Part 2 features
 
 Why I used AI
 - To learn how to properly set up and use GitHub
 - To find and fix errors faster
 - To understand my code better
 
+
 Prompts I asked
 - "How do I create a GitHub repository and push my code step by step"
 - "Find the error in my code"
 - "Why is my code not working"
+- How to add cart management in C# using arrays
+- How to implement payment validation and receipt system
 
 What I improved after using AI
 - Checked and tested each solution before using it
 - Changed some parts of the code to match my own understanding
 - Fixed errors by myself after reading the explanations
 - Made my code cleaner and more organized
+- Ensured all features work correctly through manual testing
+
+#Summary
+AI was used to help debug errors, improve input validation, and implement Part 2 features such as cart management, product search,receipt generation, low stock alerts, and order history. The AI also assisted with GitHub setup and workflow. All suggestions were reviewed, tested, and modified to match my own understanding, ensuring the final code is accurate and properly structured.
