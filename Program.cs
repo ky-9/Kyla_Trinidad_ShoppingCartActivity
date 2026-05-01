@@ -166,4 +166,85 @@ class Program
 
         orderHistory[orderCount++] = final;
         receiptNo++;
-            
+
+
+                    Console.WriteLine("\nLOW STOCK ALERT:");
+            foreach (var p in products)
+                if (p.RemainingStock <= 5)
+                    Console.WriteLine($"{p.Name} has only {p.RemainingStock} left.");
+
+            cartCount = 0;
+        }
+
+        
+        else if (choice == 6)
+        {
+            Console.WriteLine("\nORDER HISTORY:");
+            if (orderCount == 0)
+                Console.WriteLine("No orders yet.");
+            else
+            {
+                for (int i = 0; i < orderCount; i++)
+                    Console.WriteLine($"Receipt #{i + 1:D4} - ₱{orderHistory[i]}");
+            }
+        }
+
+        else if (choice == 7)
+        {
+            break;
+        }
+    }
+}
+
+
+static void AddToCart(Product[] products, int[] cartIds, int[] cartQty, double[] cartSub, ref int cartCount)
+{
+    while (true)
+    {
+        Console.Write("Enter product number (0 to stop): ");
+        if (!int.TryParse(Console.ReadLine(), out int pNum) || pNum < 0 || pNum > products.Length)
+        {
+            Console.WriteLine("Invalid.");
+            continue;
+        }
+
+        if (pNum == 0) break;
+
+        Product selected = products[pNum - 1];
+
+        Console.Write("Qty: ");
+        if (!int.TryParse(Console.ReadLine(), out int qty) || qty <= 0)
+        {
+            Console.WriteLine("Invalid.");
+            continue;
+        }
+
+        if (!selected.HasEnoughStock(qty))
+        {
+            Console.WriteLine("Not enough stock.");
+            continue;
+        }
+
+        double total = selected.GetItemTotal(qty);
+
+        int found = -1;
+        for (int i = 0; i < cartCount; i++)
+            if (cartIds[i] == selected.Id) found = i;
+
+        if (found != -1)
+        {
+            cartQty[found] += qty;
+            cartSub[found] += total;
+        }
+        else
+        {
+            cartIds[cartCount] = selected.Id;
+            cartQty[cartCount] = qty;
+            cartSub[cartCount] = total;
+            cartCount++;
+        }
+
+        selected.DeductStock(qty);
+        Console.WriteLine("Added!");
+    }
+}
