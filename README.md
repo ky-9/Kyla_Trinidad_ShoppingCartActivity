@@ -28,5 +28,5 @@ What I improved after using AI
 - Made my code cleaner and more organized
 - Ensured all features work correctly through manual testing
 
-#Summary
+# Summary
 AI was used to help debug errors, improve input validation, and implement Part 2 features such as cart management, product search,receipt generation, low stock alerts, and order history. The AI also assisted with GitHub setup and workflow. All suggestions were reviewed, tested, and modified to match my own understanding, ensuring the final code is accurate and properly structured.
